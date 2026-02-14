@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <defs>
+    <linearGradient id="bgGradient1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ff6b9d;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ffa07a;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background Circle -->
+  <circle cx="200" cy="200" r="200" fill="url(#bgGradient1)"/>
+  
+  <!-- Face -->
+  <circle cx="200" cy="180" r="100" fill="#ffe0e6"/>
+  
+  <!-- Eyes -->
+  <circle cx="175" cy="165" r="8" fill="#2c3e50"/>
+  <circle cx="225" cy="165" r="8" fill="#2c3e50"/>
+  
+  <!-- Smile -->
+  <path d="M 170 195 Q 200 210 230 195" stroke="#ff6b9d" stroke-width="4" fill="none" stroke-linecap="round"/>
+  
+  <!-- Hair -->
+  <ellipse cx="200" cy="120" rx="90" ry="40" fill="#4a2c2a"/>
+  
+  <!-- Heart decorations -->
+  <path d="M 140 300 Q 140 280 155 280 Q 170 280 170 300 Q 170 320 155 335 Q 140 320 140 300 Z" fill="#c44569"/>
+  <path d="M 230 300 Q 230 280 245 280 Q 260 280 260 300 Q 260 320 245 335 Q 230 320 230 300 Z" fill="#c44569"/>
+  
+  <!-- Name Label -->
+  <text x="200" y="370" font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">YLENIA</text>
+</svg>

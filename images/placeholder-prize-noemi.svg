@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600">
+  <defs>
+    <linearGradient id="chocolateBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fff5f7;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ffe0e6;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="600" height="600" fill="url(#chocolateBg)"/>
+  
+  <!-- Chocolate box -->
+  <rect x="150" y="200" width="300" height="250" rx="20" fill="#8b4513"/>
+  <rect x="160" y="210" width="280" height="230" rx="15" fill="#a0522d"/>
+  
+  <!-- Box lid decoration -->
+  <rect x="150" y="180" width="300" height="40" rx="10" fill="#d2691e"/>
+  <rect x="290" y="150" width="20" height="70" rx="5" fill="#ff6b9d"/>
+  <rect x="230" y="185" width="140" height="20" rx="5" fill="#ff6b9d"/>
+  
+  <!-- Chocolates in box -->
+  <circle cx="220" cy="280" r="25" fill="#4a2c2a"/>
+  <circle cx="300" cy="280" r="25" fill="#6b4423"/>
+  <circle cx="380" cy="280" r="25" fill="#4a2c2a"/>
+  
+  <circle cx="220" cy="350" r="25" fill="#6b4423"/>
+  <circle cx="300" cy="350" r="25" fill="#4a2c2a"/>
+  <circle cx="380" cy="350" r="25" fill="#6b4423"/>
+  
+  <circle cx="220" cy="410" r="25" fill="#4a2c2a"/>
+  <circle cx="300" cy="410" r="25" fill="#6b4423"/>
+  <circle cx="380" cy="410" r="25" fill="#4a2c2a"/>
+  
+  <!-- Highlights on chocolates -->
+  <ellipse cx="225" cy="275" rx="8" ry="6" fill="#d2691e" opacity="0.5"/>
+  <ellipse cx="305" cy="275" rx="8" ry="6" fill="#d2691e" opacity="0.5"/>
+  <ellipse cx="385" cy="275" rx="8" ry="6" fill="#d2691e" opacity="0.5"/>
+  
+  <!-- Hearts decoration -->
+  <path d="M 80 150 Q 80 130 95 130 Q 110 130 110 150 Q 110 170 95 185 Q 80 170 80 150 Z" fill="#ff6b9d" opacity="0.6"/>
+  <path d="M 490 150 Q 490 130 505 130 Q 520 130 520 150 Q 520 170 505 185 Q 490 170 490 150 Z" fill="#ff6b9d" opacity="0.6"/>
+  <path d="M 520 380 Q 520 360 535 360 Q 550 360 550 380 Q 550 400 535 415 Q 520 400 520 380 Z" fill="#c44569" opacity="0.6"/>
+  <path d="M 50 380 Q 50 360 65 360 Q 80 360 80 380 Q 80 400 65 415 Q 50 400 50 380 Z" fill="#c44569" opacity="0.6"/>
+  
+  <!-- Text -->
+  <text x="300" y="540" font-family="Arial, sans-serif" font-size="48" font-weight="bold" fill="#8b4513" text-anchor="middle">🍫 Cioccolatini 🍫</text>
+</svg>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Gioco di indovinelli interattivo di San Valentino">
+    <title>Gioco di Indovinelli - San Valentino</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Character Selection Screen -->
+        <div id="character-selection" class="screen active">
+            <h1>Scegli il Tuo Personaggio</h1>
+            <p class="subtitle">Seleziona un personaggio per iniziare il gioco di indovinelli!</p>
+            
+            <div class="characters">
+                <div class="character-card" tabindex="0" role="button" aria-label="Seleziona Ylenia" data-character="ylenia">
+                    <div class="character-image">
+                        <img src="images/ylenia.jpg" alt="Ylenia" onerror="this.src='images/placeholder-ylenia.svg'">
+                    </div>
+                    <h2>Ylenia</h2>
+                    <p class="character-description">Curiosa e intraprendente</p>
+                </div>
+                
+                <div class="character-card" tabindex="0" role="button" aria-label="Seleziona Noemi" data-character="noemi">
+                    <div class="character-image">
+                        <img src="images/noemi.jpg" alt="Noemi" onerror="this.src='images/placeholder-noemi.svg'">
+                    </div>
+                    <h2>Noemi</h2>
+                    <p class="character-description">Creativa e avventurosa</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Riddle Screen -->
+        <div id="riddle-screen" class="screen">
+            <button class="back-button" aria-label="Torna alla selezione personaggio">
+                ← Cambia Personaggio
+            </button>
+            
+            <div class="riddle-container">
+                <div class="character-header">
+                    <img id="selected-character-img" src="" alt="" class="small-character-img">
+                    <h2 id="selected-character-name"></h2>
+                </div>
+                
+                <div class="riddle-box">
+                    <h3>Il Tuo Indovinello</h3>
+                    <p id="riddle-text" class="riddle-text"></p>
+                </div>
+                
+                <form id="answer-form" class="answer-form">
+                    <label for="answer-input" class="visually-hidden">Inserisci la tua risposta</label>
+                    <input 
+                        type="text" 
+                        id="answer-input" 
+                        placeholder="Inserisci la tua risposta..." 
+                        autocomplete="off"
+                        required
+                        aria-required="true"
+                    >
+                    <button type="submit" class="submit-button">Verifica Risposta</button>
+                </form>
+                
+                <div id="feedback" class="feedback" role="alert" aria-live="polite"></div>
+            </div>
+        </div>
+
+        <!-- Prize Screen -->
+        <div id="prize-screen" class="screen">
+            <div class="prize-container">
+                <div class="success-animation">
+                    <div class="confetti"></div>
+                    <div class="confetti"></div>
+                    <div class="confetti"></div>
+                    <div class="confetti"></div>
+                    <div class="confetti"></div>
+                </div>
+                
+                <h1 class="prize-title">🎉 Complimenti! 🎉</h1>
+                <p class="prize-message">Hai indovinato correttamente!</p>
+                
+                <div class="prize-image-container">
+                    <img id="prize-image" src="" alt="Il tuo premio" class="prize-image">
+                </div>
+                
+                <div class="prize-actions">
+                    <button class="primary-button" id="restart-button">
+                        🔄 Gioca Ancora
+                    </button>
+                    <button class="secondary-button" id="change-character-button">
+                        👤 Cambia Personaggio
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
