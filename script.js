@@ -7,18 +7,18 @@ const gameState = {
 // Riddles and Answers for each character
 const gameData = {
     ylenia: {
-        riddle: "Sono rosso come il cuore, dolce come l'amore. Mi si offre in dono quando si vuole conquistare qualcuno. Chi sono?",
-        answer: ["rosa", "rose", "una rosa", "la rosa"],
+        riddle: "Non ha prurito, però si gratta?",
+        answer: ["formaggio", "il formaggio", "Formaggio"],
         prize: "images/prize-ylenia.jpg",
-        prizePlaceholder: "images/placeholder-prize-ylenia.svg",
+        prizePlaceholder: "images/premio.png",
         characterImg: "images/ylenia.jpg",
         characterImgPlaceholder: "images/placeholder-ylenia.svg"
     },
     noemi: {
-        riddle: "Dolce e fondente, mi sciolgo al calore. Sono il regalo perfetto per esprimere passione e tenerezza. Chi sono?",
-        answer: ["cioccolato", "cioccolata", "cioccolatino", "cioccolatini", "il cioccolato", "la cioccolata"],
+        riddle: "Cosa c'è alla fine dell'arcobaleno, al centro dell'atomo e all'inizio dell'oceano?",
+        answer: ["La lettera \"o\"", "La o", "la o", "o", "O", "La lettera o"],
         prize: "images/prize-noemi.jpg",
-        prizePlaceholder: "images/placeholder-prize-noemi.svg",
+        prizePlaceholder: "images/premio.png",
         characterImg: "images/noemi.jpg",
         characterImgPlaceholder: "images/placeholder-noemi.svg"
     }
@@ -154,7 +154,7 @@ function handleAnswerSubmit(e) {
             showPrizeScreen();
         }, 1500);
     } else {
-        if (gameState.attempts >= 3) {
+        if (gameState.attempts >= 600) {
             showFeedback(
                 `Non è corretto. Suggerimento: La risposta è "${data.answer[0]}". Riprova!`,
                 'error'

@@ -1,0 +1,19 @@
+{
+  "name": "sanvalentino",
+  "version": "1.0.0",
+  "description": "Un sito web interattivo che presenta un gioco di indovinelli a tema San Valentino con due personaggi: Ylenia e Noemi.",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nonnt66v2/SanValentino.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nonnt66v2/SanValentino/issues"
+  },
+  "homepage": "https://github.com/nonnt66v2/SanValentino#readme"
+}
